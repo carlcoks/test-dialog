@@ -2,5 +2,7 @@
 vue, vuex, ssr, dialog list
 
 ## Project setup
-npm install
-npm run dev
+
+- npm install
+
+- npm run dev
