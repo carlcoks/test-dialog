@@ -1,0 +1,52 @@
+.dialog
+  padding: 20px
+  display: flex
+  flex-direction: column
+  border: 1px solid #E9EDF2
+  position: relative
+  transition: background-color .3s
+  &:hover
+    background: #fff
+  &.router-link-active
+    background: #fff
+    z-index: 1
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      width: 2px
+      background: #398BFF
+    .dialog
+      &__date
+        color: #7D8790
+
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 6px
+    font-weight: 500
+
+  &__title
+    font-size: 14px
+    line-height: 20px
+    color: #35383D
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+  &__date
+    text-transform: uppercase
+    color: #B7C0C8
+    letter-spacing: 0.05em
+    font-size: 10px
+    line-height: 14px
+    flex: 0 0 auto
+    margin-left: 10px
+
+  &__text
+    color: #7D8790
+    font-size: 13px
+    line-height: 18px

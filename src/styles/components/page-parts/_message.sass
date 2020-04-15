@@ -1,0 +1,45 @@
+.message
+  display: flex
+  justify-content: flex-end
+  margin-top: 40px
+  &--me
+    justify-content: flex-start
+    .message
+      &__wrap
+        padding: 21px 21px 16px 22px
+        border-radius: 8px 8px 8px 0px
+        background: #F6F7F9
+      &__bottom
+        justify-content: flex-start
+
+  &__box
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-width: 380px
+
+  &__wrap
+    background: #E9F5F4
+    border-radius: 8px 8px 0px 8px
+    padding: 18px 17px 16px 26px
+  &__text
+    font-size: 14px
+    line-height: 20px
+    color: #475453
+
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin-top: 9px
+
+  &__author
+    font-weight: 500
+    font-size: 13px
+    line-height: 18px
+
+  &__date
+    margin-left: 12px
+    font-size: 10px
+    line-height: 14px
+    color: #B7C0C8

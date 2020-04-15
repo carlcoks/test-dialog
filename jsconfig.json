@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [ "src/*" ]
+    }
+  },
+  "exclude": [
+    ".vscode",
+    "build",
+    "config",
+    "static",
+    "node_modules",
+    "dist"
+  ]
+}

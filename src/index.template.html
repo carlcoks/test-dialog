@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1366">
+    {{{ meta.inject().meta.text() }}}
+    {{{ meta.inject().title.text() }}}
+    {{{ meta.inject().link.text() }}}
+    {{{ meta.inject().style.text() }}}
+    {{{ meta.inject().script.text() }}}
+    {{{ meta.inject().noscript.text() }}}
+    {{{ googleManager }}}
+  </head>
+  <body>
+    <!--vue-ssr-outlet-->
+    {{{ meta.inject().html }}}
+    {{{ meta.inject().script.text({ body: true }) }}}
+  </body>
+</html>
